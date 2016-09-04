@@ -1,2 +1,2 @@
 # THPL-Datalogger
-4 ATMega328
+For use with the ARM ATMega328
