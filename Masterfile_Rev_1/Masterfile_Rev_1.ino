@@ -11,6 +11,7 @@
 #define fill " | "
 
 #define delayBTChecks 30000 // delayBetweenTimeChecks in milliseconds (less than 60,000)
+// Note: there will be error that comes up that cycles through a range of delayBTChecks
 #define minsBetweenLogs 30
 
 DHT dht(DHTPIN, DHTTYPE);
