@@ -7,7 +7,7 @@
 
 #define DHTPIN 6
 #define DHTTYPE DHT11
-#define p0 1013.25 // Seal leven pressure in mb
+#define p0 1013.25 // Sea level pressure in mb
 #define fill " | "
 
 #define delayBTChecks 30000 // delayBetweenTimeChecks in milliseconds (less than 60,000)
