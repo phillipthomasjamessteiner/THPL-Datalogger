@@ -10,7 +10,7 @@
 #define p0 1013.25 // Sea level pressure in mb
 #define fill "|"
 
-#define delayBTChecks 30000 // delayBetweenTimeChecks in milliseconds (less than 60,000)
+#define delayBTChecks 15000 // delayBetweenTimeChecks in milliseconds (less than 60,000)
 // Note: there will be error that comes up that cycles through a range of delayBTChecks
 #define minsBetweenLogs 30
 
@@ -49,12 +49,14 @@ void setup() {
   rtc.begin();
 
   t = rtc.getTime();
-
+  
   pMCount = t.min;
+
+  Serial.println("RTC Init");
   // The following lines can be uncommented to set the date and time
-  //rtc.setDOW(WEDNESDAY);     // Set Day-of-Week to SUNDAY
-  //rtc.setTime(12, 0, 0);     // Set the time to 12:00:00 (24hr format)
-  //rtc.setDate(1, 1, 2014);   // Set the date to January 1st, 2014
+//  rtc.setDOW(TUESDAY);     // Set Day-of-Week to SUNDAY
+//  rtc.setTime(0, 52, 0);     // Set the time to 12:00:00 (24hr format)
+//  rtc.setDate(9, 13, 2016);   // Set the date to January 1st, 2014
 
   //=================================================================
   // SD Init Code Block
